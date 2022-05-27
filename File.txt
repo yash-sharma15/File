@@ -1,12 +1,12 @@
 #1..WAP to read a file and no of characters in upper
-with open('priyanshu.txt','r') as f:
+with open('yash.txt','r') as f:
     c=0
     for i in f.read():
         if i.isupper():
             c+=1
     print(c)
 #2..WAP to check word is in file or not
-with open('priyanshu.txt','r') as f:
+with open('yash.txt','r') as f:
     s=input()
     for i in f:
         l=i.split()
@@ -16,27 +16,27 @@ with open('priyanshu.txt','r') as f:
     else:
         print("word not found")
 #3..WAP to count no of words in file
-with open('priyanshu.txt','r') as f:
+with open('yash.txt','r') as f:
     c=0
     for i in f:
         l=i.split()
         c+=len(l)
     print("no of words in file",c)
 #4..WAP to count no of characters in file
-with open('priyanshu.txt','r') as f:
+with open('yash.txt','r') as f:
     c=0
     for i in f.read():
         c+=1
     print("no of characters",c)
 #5..WAP to count no of lines in a file
-with open('priyanshu.txt','r') as f:
+with open('yash.txt','r') as f:
     c=0
     for i in f:
         c+=1
     print("no of lines",c)
 #6..WAP to copy odd no of lines to another file
-f1=open('priyanshu.txt','r')
-f2=open('priyanshu2.txt','a')
+f1=open('yash.txt','r')
+f2=open('yash2.txt','a')
 c=1
 for i in f1:
     if c%2!=0:
@@ -45,8 +45,8 @@ for i in f1:
 f1.close()
 f2.close()
 #7..WAP to copy odd no of words to another file
-f1=open('priyanshu.txt','r')
-f2=open('priyanshu2.txt','a')
+f1=open('yash.txt','r')
+f2=open('yash2.txt','a')
 for i in f1:
     l=i.split()
     for j in range(len(l)):
@@ -55,7 +55,7 @@ for i in f1:
 f1.close()
 f2.close()
 #8..WAP to count no of space,\n in file
-with open('priyanshu.txt','r')as f:
+with open('yash.txt','r')as f:
     c=0
     c1=0
     for i in f.read():
@@ -67,14 +67,14 @@ with open('priyanshu.txt','r')as f:
     print('no of \n',c1)
 #9..WAP to count no of vowels in file
 l=['A','E','I','O','U','a','e','i','o','u']
-with open('priyanshu.txt','r') as f:
+with open('yash.txt','r') as f:
     c=0
     for i in f.read():
         if i in l:
             c+=1
     print('no of vowels',c)
 #10..WAP to append values in file until value is '@'
-with open('priyanshu.txt','a') as f:
+with open('yash.txt','a') as f:
     while(1):
         s=input()
         if s!='@':
